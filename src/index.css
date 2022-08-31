@@ -1,5 +1,18 @@
 @tailwind base;
 @tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply bg-[#040404]
+  }
+}
+
+@layer components {
+  .hero-button {
+    @apply rounded-lg hover:bg-[#119DA4] px-2 py-1 transition-all origin-right ease-in-out duration-500 border-2 border-white border-solid;
+  }
+}
 
 *, *::before, *::after {
   box-sizing: border-box;
